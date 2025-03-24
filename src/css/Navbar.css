@@ -1,0 +1,33 @@
+.top-bar {
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+    padding: 16px 40px; 
+    margin-bottom: 10px;
+}
+
+/* Navbar Link Hover Effect */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black; /* Change as needed */
+    padding-bottom: 4px;
+    font-weight: 600;
+  }
+  
+  nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f48c4b; /* Orange color */
+    border-radius: 30px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+  }
+  
+  nav ul li a:hover::before {
+    transform: scaleX(1);
+  }
+  
